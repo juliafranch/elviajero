@@ -17,5 +17,116 @@ html {
 body {
     font-family: 'Rubik';
     font-size: 16px;
-    
+
+}
+
+.menubar {
+    height: 85px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    z-index: 999;
+}
+
+.menuicon {
+    width: 19px;
+    height: 22px;
+    background: url(../img/menu.svg) center no-repeat;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.logo {
+    width: 139px;
+    height: 41px;
+    background: url(../img/logo_S.svg) center no-repeat;
+    vertical-align: middle;
+}
+
+.searchicon {
+    width: 22px;
+    height: 26px;
+    background: url(../img/search.svg) center no-repeat;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+header {
+    height: 100vh;
+    margin-top: -85px;
+    overflow: hidden;
+}
+
+.headimg {
+    width: 100%;
+    height: 100%;
+    margin-top: 85px;
+    background: url(../img/mariogas.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.headbox {
+    position: absolute;
+    bottom: 85px;
+    left: 0;
+    background-color: rgba(0, 0,0, .75)
+}
+
+.headbox > span {
+    padding: 8px 10px;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    background-color: #0071CE;
+    margin-left: 12px;
+}
+
+.headbox > h2 {
+    color: white;
+    font-size: 25px;
+    padding: 0 12px;
+}
+
+.highlight {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.topsemanal, .opinion, .planes {
+    height: 27vh;
+    margin: 0 12px 20px 12px;
+}
+
+.topsemanal {
+    background: 
+        linear-gradient(
+      rgba(0, 0, 0, 0.75), 
+      rgba(0, 0, 0, 0.75)
+    ),
+        url(../img/topsemanal.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.opinion {
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.75), 
+      rgba(0, 0, 0, 0.75)
+    ), url(../img/opinion.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.planes {
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.75), 
+      rgba(0, 0, 0, 0.75)
+    ),
+    url(../img/planes.jpg) center no-repeat;
+    background-size: cover;
 }
