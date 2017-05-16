@@ -11,3 +11,11 @@ html {
     -webkit-box-sizing: inherit;
     -moz-box-sizing: inherit;
 }
+
+/* Mobile First */
+
+body {
+    font-family: 'Rubik';
+    font-size: 16px;
+    
+}
