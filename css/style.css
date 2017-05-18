@@ -21,7 +21,7 @@ body {
 }
 
 .menubar {
-    height: 85px;
+    height: 75px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -55,14 +55,14 @@ body {
 
 header {
     height: 100vh;
-    margin-top: -85px;
+    margin-top: -75px;
     overflow: hidden;
 }
 
 .headimg {
     width: 100%;
     height: 100%;
-    margin-top: 85px;
+    margin-top: 75px;
     background: url(../img/mariogas.jpg) center no-repeat;
     background-size: cover;
     position: relative;
@@ -70,24 +70,38 @@ header {
 
 .headbox {
     position: absolute;
-    bottom: 85px;
+    bottom: 75px;
     left: 0;
-    background-color: rgba(0, 0,0, .75)
+    height: 21vh;
+    background-color: rgba(0, 0,0, .75);
+    padding: 15px 12px;
 }
 
-.headbox > span {
-    padding: 8px 10px;
+.linkcontainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.catbox {
+    width: 164px;
+    height: 30px;
     font-weight: 700;
     font-size: 15px;
     color: white;
     background-color: #0071CE;
-    margin-left: 12px;
+    margin-top: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.headbox > h2 {
-    color: white;
+.mainlink {
+    text-decoration: none;
+    font-weight: 700;
     font-size: 25px;
-    padding: 0 12px;
+    color: white;
 }
 
 .highlight {
@@ -95,18 +109,21 @@ header {
     height: 100vh;
     background-color: black;
     color: white;
+    padding-top: 40px;
 }
 
 .topsemanal, .opinion, .planes {
-    height: 27vh;
+    height: 24vh;
     margin: 0 12px 20px 12px;
+    display: flex;
+    align-items: center;
 }
 
 .topsemanal {
     background: 
         linear-gradient(
-      rgba(0, 0, 0, 0.75), 
-      rgba(0, 0, 0, 0.75)
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
     ),
         url(../img/topsemanal.jpg) center no-repeat;
     background-size: cover;
@@ -115,8 +132,8 @@ header {
 .opinion {
     background:
     linear-gradient(
-      rgba(0, 0, 0, 0.75), 
-      rgba(0, 0, 0, 0.75)
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
     ), url(../img/opinion.jpg) center no-repeat;
     background-size: cover;
 }
@@ -124,9 +141,24 @@ header {
 .planes {
     background:
     linear-gradient(
-      rgba(0, 0, 0, 0.75), 
-      rgba(0, 0, 0, 0.75)
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
     ),
     url(../img/planes.jpg) center no-repeat;
     background-size: cover;
+}
+
+.hlink {
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
 }
