@@ -123,7 +123,6 @@ header {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .catbox {
@@ -202,6 +201,40 @@ header {
 
 section {
   padding: 0 12px;
+}
+
+/* --- Miniatures articles / events --- */
+
+.elementbox {
+    height: 150px;
+    background-color: rgba(0, 0,0, .75);
+    padding: 15px 12px;
+}
+
+.element-link-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.catbox-small {
+    width: 164px;
+    height: 30px;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    background-color: #0071CE;
+    margin-top: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.element-link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 25px;
+    color: white;
 }
 
 /* --- Footer --- */
