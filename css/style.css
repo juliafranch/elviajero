@@ -36,12 +36,25 @@ body {
     width: 100%;
     height: 34px;
     background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .date, .weatherinfo {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 700;
     color: white;
+    display: flex;
+    align-items: center;
+}
+
+.date {
+    margin-left: 12px;
+}
+
+.weatherinfo {
+    margin-right: 12px;
 }
 
 .categories > ul {
@@ -59,9 +72,30 @@ body {
     color: black;
 }
 
+.open {
+    left: 0;
+}
+
+.calicon, .weathericon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.calicon {
+    background: url(../img/calendar.svg) center no-repeat;
+}
+
+.weathericon {
+    background: url(../img/sun.svg) center no-repeat;
+}
+
 /* Estils de la pàgina */
 
 .menubar {
+    position: fixed;
+    top: 0;
     height: 75px;
     width: 100%;
     display: flex;
@@ -96,7 +130,6 @@ body {
 
 header {
     width: 100%;
-    margin-top: -75px;
     overflow: hidden;
 }
 
@@ -150,7 +183,7 @@ header {
     overflow: hidden;
     background-color: black;
     color: white;
-    padding: 40px 0 120px 0;
+    padding: 40px 0 200px 0;
     margin-top: -75px;
 }
 
@@ -203,12 +236,18 @@ section {
     padding: 0 12px;
 }
 
+.popular {
+    margin-top: -180px;
+    color: white;
+}
+
 /* --- Miniatures articles / events --- */
 
 .imagebox {
     height: 320px;
     position: relative;
     margin: 40px 0;
+    background-color: #eee;
 }
 
 .elementbox {
@@ -216,7 +255,7 @@ section {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 150px;
+    height: 110px;
     background-color: rgba(0, 0,0, .75);
     padding: 15px 12px;
 }
