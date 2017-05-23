@@ -1,6 +1,10 @@
 $(document).ready(function() {
     $(".menuicon").click(function() {
-        $(".menu").toggleClass("open");
+        $(".menu").addClass("open");
+    });
+
+    $(".closeicon").click(function() {
+        $(".menu").removeClass("open");
     });
 });
 
@@ -15,3 +19,6 @@ $(document).scroll(function() {
       $(".menubar").css("height","75px");
   }
 });
+
+
+// TODO: Fer que la barra superior desaparegui al arribar al final de pàg.
