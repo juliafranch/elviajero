@@ -18,6 +18,11 @@ $(document).scroll(function() {
   } else {
       $(".menubar").css("height","75px");
   }
+
+  if($(window).scrollTop() + $(window).height() == $(document).height()) {
+       $(".menubar").css("height","0");
+   }
+
 });
 
 

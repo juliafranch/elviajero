@@ -109,6 +109,25 @@ body {
     margin: 18px 12px;
 }
 
+select {
+    -webkit-appearance: none;
+    background-color: white;
+    background: url(../img/down.svg) no-repeat right center;
+    background-size: 20px 20px;
+    height: 34px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 3px solid black;
+}
+
+.locselec, .orderselec {
+    width: 100%;
+}
+
+.distselec {
+    width: 147px;
+}
+
 /* Estils de la pàgina */
 
 .menubar {
@@ -254,6 +273,10 @@ section {
     padding: 0 12px;
 }
 
+section > h3 {
+    font-size: 26px;
+}
+
 .popular {
     margin-top: -180px;
     color: white;
@@ -380,4 +403,19 @@ footer > span {
 
 .pinterest {
     background: url(../img/pinterest.svg) center no-repeat;
+}
+
+
+/* ////////////////// ESTILS RESPONSIVE ////////////////// */
+
+/* ////////////////// TABLET ////////////////// */
+
+@media only screen and (min-width: 768px) {
+
+}
+
+/* ////////////////// DESKTOP ////////////////// */
+
+@media only screen and (min-width: 1024px) {
+
 }
