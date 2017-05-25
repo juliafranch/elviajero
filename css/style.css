@@ -12,13 +12,13 @@ html {
     -moz-box-sizing: inherit;
 }
 
-/* Mobile First */
-
 body {
     font-family: 'Rubik';
     font-size: 16px;
 
 }
+
+/* ////////////////// MOBILE-FIRST ////////////////// */
 
 /* Estils del menú */
 
@@ -412,6 +412,55 @@ footer > span {
 
 @media only screen and (min-width: 768px) {
 
+    .menubar {
+        position: relative;
+        height: 115px;
+        display: block;
+    }
+
+    .menuicon {
+        position: absolute;
+        bottom: 15px;
+        right: 34px;
+    }
+
+    .logo {
+        position: absolute;
+        left: 34px;
+        bottom: 15px;
+        width: 225px;
+        height: 84px;
+        background: url(../img/logo_L.svg) center no-repeat;
+    }
+
+    .searchicon {
+        position: absolute;
+        right: 60px;
+        bottom: 15px;
+    }
+
+    .headimg {
+        height: 50vh;
+        margin-top: 0;
+    }
+
+    .headbox {
+        height: 120px;
+    }
+
+    .highlight {
+        display: flex;
+    }
+
+    .topsemanal, .opinion, .planes {
+        width: 33%;
+        height: 18vh;
+    }
+
+    .imagebox {
+        width: 45%;
+        display: inline-block;
+    }
 }
 
 /* ////////////////// DESKTOP ////////////////// */
