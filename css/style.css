@@ -445,11 +445,19 @@ footer > span {
     }
 
     .headbox {
-        height: 120px;
+        height: 160px;
+        bottom: 0;
+        padding: 15px 28px;
+    }
+
+    .mainlink {
+        font-size: 36px;
     }
 
     .highlight {
         display: flex;
+        padding: 40px 28px 200px 28px;
+        margin-top: 0;
     }
 
     .topsemanal, .opinion, .planes {
@@ -457,9 +465,50 @@ footer > span {
         height: 18vh;
     }
 
+    .topsemanal {
+        margin-left: 0;
+    }
+
+    .planes {
+        margin-right: 0;
+    }
+
     .imagebox {
-        width: 45%;
+        width: 47%;
         display: inline-block;
+        margin: 0 0 40px 0;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    section {
+        padding: 0 30px;
+    }
+
+    /* --- Footer --- */
+
+    footer {
+        height: 520px;
+    }
+
+    .footericon {
+        align-self: baseline;
+    }
+
+    .footerlinks {
+        align-self: flex-end;
+    }
+
+    .social {
+        align-self: baseline;
+    }
+
+    footer > span {
+        align-self: flex-end;
     }
 }
 
