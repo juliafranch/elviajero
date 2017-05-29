@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     $(".menuicon").click(function() {
         $(".menu").addClass("open");
     });
@@ -6,6 +7,10 @@ $(document).ready(function() {
     $(".closeicon").click(function() {
         $(".menu").removeClass("open");
     });
+
+    if ($(window).width() > 1024) {
+        $(".statbar").prependTo("body");
+    }
 });
 
 var scrollAnterior = 0;
@@ -25,8 +30,16 @@ $(document).scroll(function() {
            $(".menubar").css("height","0");
        }
   }
-
 });
 
+$(window).resize(function() {
+    if ($(window).width() < 1024) {
+        $(".statbar").prependTo(".menu");
+    }
+
+    if ($(window).width() > 1024) {
+        $(".statbar").prependTo("body");
+    }
+});
 
 // TODO: Fer que la barra superior desaparegui al arribar al final de pàg.

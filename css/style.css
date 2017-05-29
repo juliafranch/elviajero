@@ -38,8 +38,13 @@ body {
 
 .statbar {
     width: 100%;
-    height: 34px;
     background-color: black;
+}
+
+.statcontainer {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 34px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -530,6 +535,16 @@ footer {
 /* ////////////////// DESKTOP ////////////////// */
 
 @media only screen and (min-width: 1024px) {
+
+    .statcontainer {
+        padding: 0 18px;
+        justify-content: flex-start;
+    }
+
+    .weatherinfo {
+        margin: 0 0 0 30px;
+    }
+
     .menubar {
         max-width: 1440px;
         margin: 0 auto;
