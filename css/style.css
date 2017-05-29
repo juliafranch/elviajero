@@ -474,7 +474,7 @@ footer > span {
     }
 
     .imagebox {
-        width: 47%;
+        width: 48%;
         display: inline-block;
         margin: 0 0 40px 0;
     }
@@ -515,5 +515,65 @@ footer > span {
 /* ////////////////// DESKTOP ////////////////// */
 
 @media only screen and (min-width: 1024px) {
+    .menubar {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
 
+    header {
+        background-color: black;
+        height: 820px;
+    }
+
+    .headwrapper {
+        max-width: 1440px;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        padding: 30px 30px 0 30px;
+    }
+
+    .headimg {
+        max-width: 940px;
+        height: 510px;
+        margin: 0 30px 0 0;
+        z-index: 999;
+    }
+
+    .highlight {
+        max-width: 440px;
+        margin: 0;
+        padding: 0;
+        align-self: flex-end;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .topsemanal, .opinion {
+        width: 48%;
+        margin: 0 0 20px 0;
+        height: 180px;
+    }
+
+    .planes {
+        width: 100%;
+        margin: 0;
+        height: 180px;
+    }
+
+    section {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .imagebox {
+        width: 32%;
+    }
+
+    /* --- Footer --- */
+
+    footer {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
 }
