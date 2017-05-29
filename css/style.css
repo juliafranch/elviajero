@@ -330,6 +330,10 @@ section > h3 {
 /* --- Footer --- */
 
 footer {
+    background-color: black;
+}
+
+.footerwrapper {
     width: 100%;
     height: 100vh;
     background-color: black;
@@ -339,7 +343,13 @@ footer {
     justify-content: space-between;
 }
 
-footer > span {
+.copyright {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.copyright > span {
     font-size: 14px;
     color: white;
     align-self: center;
@@ -491,7 +501,7 @@ footer > span {
 
     /* --- Footer --- */
 
-    footer {
+    .footerwrapper {
         height: 520px;
     }
 
@@ -507,7 +517,12 @@ footer > span {
         align-self: baseline;
     }
 
-    footer > span {
+    .copyright {
+        float: right;
+        margin: -30px 30px 0 0;
+    }
+
+    .copyright > span {
         align-self: flex-end;
     }
 }
@@ -534,14 +549,14 @@ footer > span {
     }
 
     .headimg {
-        max-width: 940px;
+        max-width: 910px;
         height: 510px;
         margin: 0 30px 0 0;
         z-index: 999;
     }
 
     .highlight {
-        max-width: 440px;
+        width: 40%;
         margin: 0;
         padding: 0;
         align-self: flex-end;
@@ -552,13 +567,21 @@ footer > span {
     .topsemanal, .opinion {
         width: 48%;
         margin: 0 0 20px 0;
-        height: 180px;
+        height: 160px;
     }
 
     .planes {
         width: 100%;
         margin: 0;
-        height: 180px;
+        height: 160px;
+    }
+
+    .hlink {
+        font-size: 2vw;
+    }
+
+    .planes > .hlink {
+        font-size: 35px;
     }
 
     section {
@@ -573,7 +596,50 @@ footer > span {
     /* --- Footer --- */
 
     footer {
-        max-width: 1440px;
+        width: 100%;
+        background-color: black;
+        height: 270px;
+    }
+
+    .copyright {
+        float: none;
+        width: 120px;
         margin: 0 auto;
+        text-align: center;
+    }
+
+    .footerwrapper {
+        max-width: 1440px;
+        height: 250px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footerlinks {
+        align-self: flex-start;
+        display: flex;
+    }
+
+    .footerlist {
+        margin-right: 30px;
+    }
+
+    .social {
+        align-self: flex-start;
+    }
+
+    .social > h4 {
+        margin-top: 0;
+    }
+}
+
+/* ////////////////// BIG DESKTOP +1440px width ////////////////// */
+
+
+@media only screen and (min-width: 1440px) {
+    .hlink {
+        font-size: 35px;
     }
 }
