@@ -550,6 +550,36 @@ footer {
         margin: 0 auto;
     }
 
+    .menuicon {
+        bottom: 50px;
+    }
+
+    .categories {
+        position: absolute;
+        bottom: 15px;
+        right: 30px;
+    }
+
+    .menu {
+        top: 151px;
+        left: 0;
+        height: 300px;
+        display: none;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .categories > ul {
+        display: inline;
+    }
+
+    .categories > ul li {
+        display: inline;
+        margin-left: 20px;
+    }
+
     header {
         background-color: black;
         height: 820px;
@@ -577,6 +607,12 @@ footer {
         align-self: flex-end;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+
+    .hlink {
+        width: 100%;
+        margin: 0;
+        text-align: center;
     }
 
     .topsemanal, .opinion {

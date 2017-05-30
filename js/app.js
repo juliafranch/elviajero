@@ -10,6 +10,8 @@ $(document).ready(function() {
 
     if ($(window).width() > 1024) {
         $(".statbar").prependTo("body");
+        $(".categories").appendTo(".menubar");
+        $(".searchicon").css("display","none");
     }
 });
 
@@ -35,10 +37,14 @@ $(document).scroll(function() {
 $(window).resize(function() {
     if ($(window).width() < 1024) {
         $(".statbar").prependTo(".menu");
+        $(".categories").prependTo(".menucontent");
+        $(".searchicon").css("display","block");
     }
 
     if ($(window).width() > 1024) {
         $(".statbar").prependTo("body");
+        $(".categories").appendTo(".menubar");
+        $(".searchicon").css("display","none");
     }
 });
 
