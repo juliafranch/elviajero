@@ -1,17 +1,17 @@
 $(document).ready(function() {
 
-    $(".menuicon").click(function() {
-        $(".menu").addClass("open");
-    });
+    $(".menuicon").on("click", obrirMenu);
+    $(".closeicon").on("click", tancarMenu);
 
-    $(".closeicon").click(function() {
-        $(".menu").removeClass("open");
-    });
-
-    if ($(window).width() > 1024) {
+    if ($(window).width() >= 1024) {
         $(".statbar").prependTo("body");
         $(".categories").appendTo(".menubar");
         $(".searchicon").css("display","none");
+
+        $(".menuicon").off("click", obrirMenu);
+        $(".closeicon").off("click", tancarMenu);
+
+        $(".menuicon").on("click", toggleMenu);
     }
 });
 
@@ -39,13 +39,33 @@ $(window).resize(function() {
         $(".statbar").prependTo(".menu");
         $(".categories").prependTo(".menucontent");
         $(".searchicon").css("display","block");
+
+        $(".menuicon").off("click", toggleMenu);
+
+        $(".menuicon").on("click", obrirMenu);
+        $(".closeicon").on("click", tancarMenu);
     }
 
     if ($(window).width() > 1024) {
         $(".statbar").prependTo("body");
         $(".categories").appendTo(".menubar");
         $(".searchicon").css("display","none");
+
+        $(".menuicon").off("click", obrirMenu);
+        $(".closeicon").off("click", tancarMenu);
+
+        $(".menuicon").on("click", toggleMenu);
     }
 });
 
-// TODO: Fer que la barra superior desaparegui al arribar al final de pàg.
+function obrirMenu() {
+    $(".menu").addClass("open");
+}
+
+function tancarMenu() {
+    $(".menu").removeClass("open");
+}
+
+function toggleMenu() {
+    $(".menu").toggleClass("open");
+}

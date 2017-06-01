@@ -536,6 +536,54 @@ footer {
 
 @media only screen and (min-width: 1024px) {
 
+    /* Estils del menú */
+
+    .menu {
+        position: absolute;
+        top: 150px;
+        left: 0;
+        height: 90px;
+        display: none;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .closeicon {
+        display: none;
+    }
+
+    .menucontent {
+        max-width: 1440px;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+
+    .menucontent > form {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .menucontent > form > h3 {
+        font-size: 16px;
+    }
+
+    .locselec {
+        max-width: 200px;
+    }
+
+    .orderselec {
+        max-width: 200px;
+    }
+
+    .distselec {
+        max-width: 100px;
+    }
+
+    /* Estils de la pàgina */
+
     .statcontainer {
         padding: 0 18px;
         justify-content: flex-start;
@@ -560,17 +608,6 @@ footer {
         right: 30px;
     }
 
-    .menu {
-        top: 151px;
-        left: 0;
-        height: 300px;
-        display: none;
-    }
-
-    .open {
-        display: block;
-    }
-
     .categories > ul {
         display: inline;
     }
@@ -578,6 +615,7 @@ footer {
     .categories > ul li {
         display: inline;
         margin-left: 20px;
+        font-size: 11px;
     }
 
     header {
@@ -692,5 +730,21 @@ footer {
 @media only screen and (min-width: 1440px) {
     .hlink {
         font-size: 35px;
+    }
+
+    .categories > ul li {
+        font-size: 14px;
+    }
+
+    .locselec {
+        max-width: 280px;
+    }
+
+    .orderselec {
+        max-width: 280px;
+    }
+
+    .distselec {
+        max-width: 147px;
     }
 }
