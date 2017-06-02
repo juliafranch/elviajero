@@ -673,6 +673,30 @@ footer {
         font-size: 35px;
     }
 
+    .searchcont {
+        width: 100%;
+        margin-bottom: 90px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .searchin {
+        width: 90%;
+        background-color: rgba(0,0,0,0);
+        border: none;
+        border-bottom: 3px solid white;
+        padding: 10px 10px;
+        font-size: 18px;
+    }
+
+    .siconwhite {
+        width: 26px;
+        height: 30px;
+        background: url(../img/search_white.svg) center no-repeat;
+        vertical-align: middle;
+    }
+
     section {
         max-width: 1440px;
         margin: 0 auto;
