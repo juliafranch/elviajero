@@ -420,6 +420,114 @@ footer {
     background: url(../img/pinterest.svg) center no-repeat;
 }
 
+/* Estils propis de l'article */
+
+.articleheader {
+    height: 60vh;
+}
+
+.articleheader > .headwrapper > .headimg {
+    position: relative;
+    height: 60vh;
+}
+
+.articlecatbox {
+    margin: 0;
+    margin-top: -15px;
+}
+
+article {
+    padding: 0 12px;
+}
+
+article > h2 {
+    font-size: 32px;
+}
+
+article > p {
+    line-height: 1.4;
+}
+
+.article-datelocation > strong {
+    font-size: 12px;
+}
+
+.locicon, .calicon-black, .star {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.star {
+    background: url(../img/star.svg) center no-repeat;
+}
+
+.locicon {
+    background: url(../img/location.svg) center no-repeat;
+}
+
+.calicon-black {
+    background: url(../img/calendar_blck.svg) center no-repeat;
+}
+
+.facebookshare, .twittershare, .pinterestshare {
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+}
+
+.facebookshare {
+    background: url(../img/facebook_blck.svg) center no-repeat;
+}
+
+.twittershare {
+    background: url(../img/twitter_blck.svg) center no-repeat;
+}
+
+.pinterestshare {
+    background: url(../img/pinterest_blck.svg) center no-repeat;
+}
+
+.calendar > table {
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+}
+
+.calendar > table > thead {
+    border-bottom: 1px solid black;
+    font-weight: 700;
+}
+
+thead > tr {
+    height: 40px;
+}
+
+tbody > tr {
+    height: 35px;
+}
+
+.event-day {
+    border-radius: 30px;
+    background-color: #0071CE;
+    color: white;
+    font-weight: 700;
+}
+
+.map {
+    width: 100%;
+    height: 450px;
+}
+
+.commentbutton {
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    padding: 10px 10px;
+}
+
 
 /* ////////////////// ESTILS RESPONSIVE ////////////////// */
 
