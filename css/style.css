@@ -438,6 +438,7 @@ footer {
 
 article {
     padding: 0 12px;
+    margin-bottom: 60px;
 }
 
 article > h2 {
@@ -448,13 +449,25 @@ article > p {
     line-height: 1.4;
 }
 
+.article-score {
+    display: flex;
+    align-items: center;
+}
+
+.article-datelocation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 30px 0;
+}
+
 .article-datelocation > strong {
     font-size: 12px;
 }
 
 .locicon, .calicon-black, .star {
-    width: 20px;
-    height: 20px;
+    width: 27px;
+    height: 27px;
     display: inline-block;
 }
 
@@ -478,6 +491,7 @@ article > p {
 
 .facebookshare {
     background: url(../img/facebook_blck.svg) center no-repeat;
+    margin-left: 10px;
 }
 
 .twittershare {
@@ -486,6 +500,15 @@ article > p {
 
 .pinterestshare {
     background: url(../img/pinterest_blck.svg) center no-repeat;
+}
+
+.share-article {
+    width: 111px;
+    margin: 45px auto;
+}
+
+aside {
+    padding: 0 12px;
 }
 
 .calendar > table {
@@ -520,12 +543,21 @@ tbody > tr {
 }
 
 .commentbutton {
+    display: block;
+    width: 190px;
+    text-align: center;
     outline: none;
     border: none;
+    text-decoration: none;
     background-color: black;
     color: white;
+    margin: 0 auto;
     font-weight: 700;
     padding: 10px 10px;
+}
+
+.comments {
+    padding: 0 12px;
 }
 
 
