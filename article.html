@@ -19,7 +19,7 @@
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <script src="js/app.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500" rel="stylesheet">
   </head>
   <body>
     <div class="menu">
@@ -211,22 +211,26 @@
     <div class="comments" id="com">
         <h2>COMENTARIOS</h2>
         <div class="commentbox">
-            <div class="profilepicture"></div>
             <div class="userdata">
-                Donec Pharetra
-                22/05/2017
+                <div class="profilepicture"></div>
+                <div class="commentinfo">
+                    <span class="username">Donec Pharetra</span>
+                    <time>22/05/2017</time>
+                </div>
+
             </div>
             <div class="commentbody">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum, odio ut commodo consectetur, odio est facilisis dolor, sed accumsan velit mi id massa. Donec elit libero, gravida sed odio quis, vulputate facilisis nisi. Suspendisse tincidunt consectetur nisi a posuere. Ut cursus, lectus ut molestie pretium, mi neque sagittis mauris, sodales suscipit turpis quam nec tellus. Integer odio nulla, suscipit a mauris non, consectetur dapibus est. Nullam eu libero ornare, interdum sapien in, commodo leo. Nulla pharetra mauris vel tellus semper finibus. Aenean elementum ipsum ligula. Ut ut purus justo. Nullam auctor mauris sem, at tristique urna ullamcorper ut. Cras ultricies purus varius volutpat luctus.
                 </p>
-                <div class="upvote"></div>
                 <div class="downvote"></div>
+                <div class="upvote"></div>
             </div>
         </div>
         <div class="commentinput">
             <form>
-                <input type="text" />
+                <textarea name="writecomment">Escríbenos algo...</textarea>
+                <button type="send">ENVIAR</button>
             </form>
         </div>
     </div>
