@@ -426,14 +426,16 @@ footer {
     height: 60vh;
 }
 
-.articleheader > .headwrapper > .headimg {
+.articleheader > .headwrapper-article > .headimg {
     position: relative;
     height: 60vh;
 }
 
 .articlecatbox {
+    position: relative;
     margin: 0;
     margin-top: -15px;
+    z-index: 1000;
 }
 
 article {
@@ -762,6 +764,29 @@ button {
         padding: 0 30px;
         display: flex;
     }
+
+    .dates-calendar {
+        width: 50%;
+    }
+
+    .map {
+        width: 50%;
+    }
+
+    .share-article {
+        width: 300px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .commentbutton {
+        float: right;
+    }
+
+    .commentbody {
+        line-height: 1.4;
+    }
 }
 
 /* ////////////////// DESKTOP ////////////////// */
@@ -978,6 +1003,58 @@ button {
     .social > h4 {
         margin-top: 0;
     }
+
+    /* Estils propis de l'article */
+
+    .articleheader {
+        height: 510px;
+    }
+
+    .headwrapper-article {
+        max-width: 1440px;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+
+    .content-main {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .share-article {
+        margin-top: 50px;
+    }
+
+    article {
+        width: 60%;
+        display: inline-block;
+    }
+
+    article p:last-child {
+        margin-bottom: 60px;
+    }
+
+    aside {
+        flex-direction: column;
+        width: 380px;
+        float: right;
+        margin-top: 35px;
+    }
+
+    .commentbutton {
+        margin-top: -49px;
+    }
+
+    .comments {
+        width: 60%;
+        padding: 0 30px;
+    }
+
+    p:last-child {
+        margin-bottom: 90px;
+    }
 }
 
 /* ////////////////// BIG DESKTOP +1440px width ////////////////// */
@@ -1002,5 +1079,33 @@ button {
 
     .distselec {
         max-width: 147px;
+    }
+
+    /* Estils propis de l'article */
+
+    .headwrapper-article {
+        /*padding-left: 130px;*/
+    }
+
+    .headwrapper-article > .headimg {
+        width: 900px;
+    }
+
+    article {
+        width: 790px;
+        padding: 0;
+    }
+
+    .content-main {
+        padding-left: 130px;
+    }
+
+    aside {
+        width: 440px;
+    }
+
+    .comments {
+        width: 790px;
+        padding: 0;
     }
 }
