@@ -1045,6 +1045,10 @@ button {
         padding: 0 30px;
     }
 
+    .articleheader > .headwrapper-article > .headimg {
+        height: 510px;
+    }
+
     .interests {
         margin: 0;
         padding: 0;
