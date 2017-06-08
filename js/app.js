@@ -15,8 +15,6 @@ $(document).ready(function() {
     if ($(window).width() >= 1024) {
         redimensionaDesktop();
     }
-
-    $("aside").css("float","right");
 });
 
 $(document).scroll(function() {
@@ -37,6 +35,8 @@ $(document).scroll(function() {
 });
 
 $(window).resize(function() {
+    var interests;
+
     if ($(window).width() < 1024) {
         redimensionaMobile();
     }
@@ -70,9 +70,8 @@ function redimensionaDesktop() {
     $(".menuicon").on("click", toggleMenu);
 
     $(".highlight").prepend(searchContainer);
-
-    //$(".interests").appendTo(".related");
-    $(".interests").remove();
+    $(".interests").appendTo(".related");
+    interests = $(".interests");
 }
 
 function redimensionaMobile() {
@@ -87,4 +86,5 @@ function redimensionaMobile() {
     $(".closeicon").on("click", tancarMenu);
 
     $(".searchcont").remove();
+    interests.insertBefore("aside");
 }
