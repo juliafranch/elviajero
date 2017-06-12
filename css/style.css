@@ -196,6 +196,7 @@ header {
 
 .headbox {
     position: absolute;
+    width: 100%;
     bottom: 75px;
     left: 0;
     height: 21vh;
@@ -335,6 +336,7 @@ section > h3 {
 }
 
 .element-link {
+    line-height: 1.1;
     text-decoration: none;
     font-weight: 500;
     font-size: 25px;
