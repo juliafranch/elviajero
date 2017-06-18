@@ -1,5 +1,5 @@
 var scrollAnterior = 0;
-var intervalHighlight;
+var intervalHighlight = null;
 var searchContainer = $("<form/>").addClass("searchcont");
 var searchInput = $("<input/>").attr("type","text").attr("placeholder","Buscar").addClass("searchin");
 var searchIcon = $("<div/>").addClass("siconwhite");
@@ -16,12 +16,10 @@ $(document).ready(function() {
 
     if (window.innerWidth >= 1024) {
         redimensionaDesktop();
-        if (window.innerWidth < 1440) {
-            changeHighlightItem();
-        } else {
-            clearInterval(intervalHighlight);
-        }
+        changeHighlightItem();
     }
+
+    smoothScroll();
 
     $(document).scroll(function() {
       var scrollActual = $(document).scrollTop();
@@ -47,13 +45,12 @@ $(document).ready(function() {
 
         if (window.innerWidth >= 1024) {
             redimensionaDesktop();
+            changeHighlightItem();
+        }
 
-            if (window.innerWidth >= 1440) {
-                clearInterval(intervalHighlight);
-                $(".imagebox").removeClass("hide");
-            } else if (window.innerWidth < 1440){
-                changeHighlightItem();
-            }
+        if (window.innerWidth >= 1440) {
+            $(".imagebox").removeClass("hide");
+            clearInterval(intervalHighlight);
         }
     });
 
@@ -105,15 +102,37 @@ function redimensionaMobile() {
 function changeHighlightItem() {
     $(".interests-wrapper").children().first().addClass("hide");
     var isFirst;
-    intervalHighlight = setInterval(function () {
-        if (isFirst) {
-            $(".interests-wrapper").children().first().addClass("hide");
-            $(".interests-wrapper").children().last().removeClass("hide");
-            isFirst = false;
-        } else {
-            $(".interests-wrapper").children().last().addClass("hide");
-            $(".interests-wrapper").children().first().removeClass("hide");
-            isFirst = true;
-        }
-    }, 3000);
+
+    if (window.innerWidth < 1440) {
+        intervalHighlight = setInterval(function () {
+            if (isFirst) {
+                $(".interests-wrapper").children().first().addClass("hide");
+                $(".interests-wrapper").children().last().removeClass("hide");
+                isFirst = false;
+            } else {
+                $(".interests-wrapper").children().last().addClass("hide");
+                $(".interests-wrapper").children().first().removeClass("hide");
+                isFirst = true;
+            }
+        }, 3000);
+    } else if (window.innerWidth >= 1440){
+        $(".imagebox").removeClass("hide");
+        clearInterval(intervalHighlight);
+    }
+
+}
+
+function smoothScroll() {
+    $('a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top - 30
+        }, 900, 'swing', function() {
+            window.location.hash = target;
+        });
+    });
 }
